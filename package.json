@@ -1,0 +1,23 @@
+{
+  "name": "honest-workers",
+  "version": "0.0.0",
+  "description": "Promise based WebWorkers, for much multi-threaded goodness",
+  "main": "dist/honest-workers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainreid820/honest-workers.git"
+  },
+  "keywords": [
+    "web",
+    "workers",
+    "web-workers"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iainreid820/honest-workers/issues"
+  },
+  "homepage": "https://github.com/iainreid820/honest-workers#readme"
+}
