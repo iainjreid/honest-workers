@@ -31,7 +31,7 @@ class HonestWorkers {
    * @param {String}   uid - A unique name or identifier
    * @param {Function} fn  - A function with no lexical dependance
    *
-   * @return {Function} - A reference to the new congifuration object
+   * @return {Function} A reference to the new congifuration object
    */
   register (uid, fn) {
     const workers = _workers.get(this)
@@ -51,7 +51,7 @@ class HonestWorkers {
    * @param {String} uid  - A unique name or identifier
    * @param {...Any} args - A list of arguements to be passed
    *
-   * @return {Promise} - A Promise dependant on the success of the task
+   * @return {Promise} A Promise dependant on the success of the task
    */
   execute (uid, ...args) {
     let worker
