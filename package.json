@@ -7,6 +7,7 @@
     "build": "npm run build:bundle",
     "build:bundle": "webpack -p --color",
     "build:watch": "webpack -d --color --watch",
+    "docs": "jsdoc src -d docs",
     "lint": "eslint src --fix; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
