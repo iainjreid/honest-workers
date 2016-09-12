@@ -64,11 +64,11 @@ class HonestWorkers {
     worker = new Worker(worker)
 
     return Promise((resolve, reject) => {
-      worker.onmessage = (msg) => {
-        resolve(msg)
+      worker.onmessage = (e) => {
+        resolve(e.data)
       }
 
-      worker.postMessage([...args, resolve])
+      worker.postMessage(args)
     })
   }
 
