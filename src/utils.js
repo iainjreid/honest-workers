@@ -7,10 +7,11 @@ function createWorkerScript (fn) {
   }
 
   let blob = new Blob([
-    `self.onmessage = function () {
-      return ${fn.toString()}
+    `self.onmessage = function (e) {
+      e.data[e.data.length] = postMessage
+      return (${fn.toString()}).apply(this, e.data)
     }`
-  ], { type: 'text/javascript' })
+  ], { type: 'application/javascript' })
 
   return URL.createObjectURL(blob)
 }
