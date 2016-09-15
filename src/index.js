@@ -17,17 +17,17 @@ class HonestWorkers {
   /**
    * @description This method will register a new function or task using the supplied UID, provided that that UID has
    *              not previously been used. For convenience, a reference to the newly registered item will be returned.
-   * 
+   *
    *              The function or task must adhere to the formatting in the example provided, and the UID must be a
    *              unique string (in the context of the HonestWorker instance).
-   * 
+   *
    * @example
    * honestWorkers.register('myTask', function (done) {
    *   // ... do something snazzy
-   * 
+   *
    *   done()
    * })
-   * 
+   *
    * @param {String}   uid - A unique name or identifier
    * @param {Function} fn  - A function with no lexical dependance
    *
