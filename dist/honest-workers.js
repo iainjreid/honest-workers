@@ -79,6 +79,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _classCallCheck(this, HonestWorkers);
 	
 	    _workers.set(this, {});
+	
+	    // Setup the default values
+	    this.defaultThreads = 5;
 	  }
 	
 	  /**
@@ -112,8 +115,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	        throw Error('The UID must be unique');
 	      }
 	
-	      workers[uid] = (0, _utils.createWorkerScript)(fn);
+	      // Generate the script source using the provided function
+	      var src = (0, _utils.createWorkerScript)(fn);
+	
+	      workers[uid] = {
+	        src: src,
+	        threads: function (n) {
+	          var threads = [];
+	          for (var i = 0; i < n;) {
+	            threads[i++] = new Worker(src);
+	          }
+	          return threads;
+	        }(this.defaultThreads)
+	      };
 	      _workers.set(this, workers);
+	
+	      console.log(workers);
 	
 	      return workers[uid];
 	    }
@@ -139,11 +156,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        throw Error('The UID has not been defined');
 	      }
 	
-	      worker = new Worker(worker);
+	      // Retrieve a reference to a free thread or create a new one
+	      for (var i = 0, n = worker.threads.length; i < n; i++) {
+	        if (!worker.threads[i].onmessage) {
+	          worker = worker.threads[i];
+	          break;
+	        }
+	      }
+	
+	      if (!worker) {
+	        worker = worker.threads[worker.threads.length] = new Worker(worker.src);
+	      }
+	
+	      console.log(worker);
 	
 	      return new Promise(function (resolve, reject) {
 	        worker.onmessage = function (e) {
 	          resolve(e.data);
+	          worker.onmessage = null;
 	        };
 	
 	        worker.postMessage(args);
