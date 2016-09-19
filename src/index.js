@@ -80,4 +80,4 @@ class HonestWorkers {
   }
 }
 
-export default new HonestWorkers()
+module.exports = new HonestWorkers();
