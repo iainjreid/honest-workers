@@ -63,7 +63,7 @@ class HonestWorkers {
 
     worker = new Worker(worker)
 
-    return Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       worker.onmessage = (e) => {
         resolve(e.data)
       }
@@ -80,4 +80,4 @@ class HonestWorkers {
   }
 }
 
-module.exports = new HonestWorkers();
+module.exports = new HonestWorkers()
