@@ -8,7 +8,12 @@ function createWorkerScript (fn) {
 
   let blob = new Blob([
     `self.onmessage = function (e) {
-      e.data[e.data.length] = postMessage
+      e.data[e.data.length] = function () {
+        if (!arguments.length) {
+          arguments = [null]
+        }
+        postMessage.apply(this, arguments)
+      }
       return (${fn.toString()}).apply(this, e.data)
     }`
   ], { type: 'application/javascript' })
