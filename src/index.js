@@ -59,8 +59,6 @@ class HonestWorkers {
     }
     _workers.set(this, workers)
 
-    console.log(workers)
-
     return workers[uid]
   }
 

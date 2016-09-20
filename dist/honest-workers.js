@@ -130,8 +130,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      };
 	      _workers.set(this, workers);
 	
-	      console.log(workers);
-	
 	      return workers[uid];
 	    }
 	
