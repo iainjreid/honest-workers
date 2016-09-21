@@ -1,7 +1,7 @@
 # Honest Workers
 Promise based WebWorkers, for much multi-threaded goodness
 
-[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/honest-workers)
+[![npm](https://badge.fury.io/js/honest-workers.svg)](https://badge.fury.io/js/honest-workers)
 
 ### Contents
 - [Installation](#installation)
