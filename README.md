@@ -15,7 +15,21 @@ npm install honest-workers --save
 ```
 
 ### Usage
-(This library is not yet complete)
+Include this library in your application via either your choosen bundling tool, or via a script tag in the head of your website. This library will currently work out-of-the-box with all known bundlers and or transpilers.
+
+A brief example in ES5 for Browserify or Webpack users would go as follows. This snippet will simply log "Hello!" to the console.
+
+```javascript
+var honestWorkers = require('honest-workers');
+
+honestWorkers.register('myEchoTask', function (msg, done) {
+    done(msg);
+});
+
+honestWorkers.execute('myEchoTask', 'Hello!').then(function (echo) {
+    console.log(echo);
+});
+```
 
 For more detailed usage, please follow [this link](https://iainreid820.github.io/honest-workers/), where you can find the documentation generated directly from the source code.
 
