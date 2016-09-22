@@ -4,7 +4,7 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "honest-workers": "0.0.3"
+    "honest-workers": "0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
