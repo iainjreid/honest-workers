@@ -1,6 +1,6 @@
 {
   "name": "honest-workers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise based WebWorkers, for much multi-threaded goodness",
   "main": "dist/honest-workers.js",
   "scripts": {
