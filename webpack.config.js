@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.js',
+  entry: './source/index.js',
   output: {
     library: 'honestWorkers',
     libraryTarget: 'umd',
