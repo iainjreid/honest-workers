@@ -1,7 +1,7 @@
 # Honest Workers
 Promise based WebWorkers, for much multi-threaded goodness
 
-[![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers)
+[![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers) [![Bower](https://img.shields.io/bower/v/honest-workers.svg?style=flat-square)](https://github.com/iainreid820/honest-workers)
 
 ## Contents
 - [Installation](#installation)
@@ -9,10 +9,14 @@ Promise based WebWorkers, for much multi-threaded goodness
 - [License](#license)
 
 ## Installation
-This library is available for installation via NPM, simply type the following into your terminal to install the latest version:
+This library is available for installation via both NPM and Bower, simply type one of the following, depending on your package manager, into your terminal to install the latest version:
 
 ```bash
-npm install honest-workers --save
+# Install the module from NPM
+npm i honest-workers -S
+
+# Or from the Bower registry
+bower i honsest-workers -S
 ```
 
 ## Usage
@@ -35,4 +39,4 @@ honestWorkers.execute('myEchoTask', 'Hello!').then(function (echo) {
 For more detailed usage, please follow [this link](https://iainreid820.github.io/honest-workers/), where you can find the documentation generated directly from the source code.
 
 ## License
-This project is licensed under the GNU license, please see [the license](http://www.gnu.org/licenses/gpl-3.0.txt) for more information.
+This project is licensed under the MIT license.
