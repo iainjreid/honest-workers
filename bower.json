@@ -1,0 +1,25 @@
+{
+  "name": "honest-workers",
+  "description": "Promise based WebWorkers, for much multi-threaded goodness",
+  "main": "dist/honest-workers.js",
+  "keywords": [
+    "web",
+    "workers",
+    "web-workers"
+  ],
+  "authors": [
+    {
+      "name": "Iain Reid",
+      "email": "iainreid382@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
