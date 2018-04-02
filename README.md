@@ -2,6 +2,7 @@
 Promise based WebWorkers, for much multi-threaded goodness
 
 [![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers) [![Bower](https://img.shields.io/bower/v/honest-workers.svg?style=flat-square)](https://github.com/iainreid820/honest-workers)
+![travis](https://img.shields.io/travis/iainreid820/honest-workers/master.svg?style=flat-square)
 
 ## Contents
 - [Installation](#installation)
