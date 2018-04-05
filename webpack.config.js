@@ -7,10 +7,12 @@ module.exports = {
     filename: 'honest-workers.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        use: [{
+          loader: 'babel-loader'
+        }]
       }
     ]
   },
