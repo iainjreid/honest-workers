@@ -1,9 +1,10 @@
 # Honest Workers
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/iainreid820/honest-workers.svg)](https://greenkeeper.io/)
 Promise based WebWorkers, for much multi-threaded goodness
 
-[![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers) [![Bower](https://img.shields.io/bower/v/honest-workers.svg?style=flat-square)](https://github.com/iainreid820/honest-workers)
+[![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers)
+[![bower](https://img.shields.io/bower/v/honest-workers.svg?style=flat-square)](https://github.com/iainreid820/honest-workers)
+![greenkeeper](https://badges.greenkeeper.io/iainreid820/honest-workers.svg)
 ![travis](https://img.shields.io/travis/iainreid820/honest-workers/master.svg?style=flat-square)
 
 ## Contents
