@@ -1,9 +1,11 @@
+const path = require('path')
+
 module.exports = {
   entry: './source/index.js',
   output: {
     library: 'honestWorkers',
     libraryTarget: 'umd',
-    path: 'dist',
+    path: path.resolve('dist'),
     filename: 'honest-workers.js'
   },
   module: {
