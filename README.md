@@ -4,7 +4,7 @@ Promise based WebWorkers, for much multi-threaded goodness
 
 [![npm](https://img.shields.io/npm/v/honest-workers.svg?style=flat-square)](https://www.npmjs.com/package/honest-workers)
 [![bower](https://img.shields.io/bower/v/honest-workers.svg?style=flat-square)](https://github.com/iainreid820/honest-workers)
-![greenkeeper](https://badges.greenkeeper.io/iainreid820/honest-workers.svg)
+![greenkeeper](https://badges.greenkeeper.io/iainreid820/honest-workers.svg?style=flat-square)
 ![travis](https://img.shields.io/travis/iainreid820/honest-workers/master.svg?style=flat-square)
 
 ## Contents
@@ -44,3 +44,4 @@ For more detailed usage, please follow [this link](https://iainreid820.github.io
 
 ## License
 This project is licensed under the MIT license.
+
